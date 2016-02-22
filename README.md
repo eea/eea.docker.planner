@@ -22,7 +22,9 @@ moving data volume containers from one host to another:
 
     docker run --rm --volumes-from=planner_home -v $(pwd):/backup busybox tar cvfp /backup/planner_home.tar /var/local
 
+
 <target host>
+
 
     docker run -d --name planner_home eeacms/var_local_data adduser -D planner
 
