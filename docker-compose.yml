@@ -1,0 +1,7 @@
+planner:
+  restart: always
+  build: planner
+  ports:
+    - "50005:21582"
+  volumes-from:
+    - planner_home
