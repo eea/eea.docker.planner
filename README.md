@@ -4,7 +4,9 @@ run the container with docker-compose:
 
 create the data container planner_home (see below)
     git clone <reponame>
+    
     docker-compose build 
+    
     docker-compose up -d
 
 run the container:
