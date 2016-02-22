@@ -3,5 +3,5 @@ planner:
   build: planner
   ports:
     - "50005:21582"
-  volumes-from:
-    - planner_home
+  volumes_from:
+  - planner_home
