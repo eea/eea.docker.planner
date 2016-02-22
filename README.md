@@ -1,5 +1,12 @@
 # eea.docker.planner
 
+run the container with docker-compose:
+
+create the data container planner_home (see below)
+git clone <reponame>
+docker-compose build 
+docker-compose up -d
+
 run the container:
 
     docker run --restart=always --name planner -p <port_host>:21582 --volumes-from=planner_home -d eeacms/planner
