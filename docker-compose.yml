@@ -4,7 +4,7 @@ planner:
 
   mem_limit: 1500000000
 #  cpu_shares: 73
-  cpuset: 1
+#  cpuset: 1 !!!disabled as not working with 1.7.1!!!
 
   ports:
     - "50005:21582"
