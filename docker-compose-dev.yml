@@ -1,0 +1,7 @@
+zope:
+  build: planner
+  volumes:
+    - planner-data:/var/local/website/var
+  mem_limit: 1500000000
+  ports:
+    - "8080:8080"

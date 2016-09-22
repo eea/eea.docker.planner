@@ -1,12 +1,13 @@
-planner:
-  restart: always
-  build: planner
-
-  mem_limit: 1500000000
-#  cpu_shares: 73
-#  cpuset: 1 !!!disabled as not working with 1.7.1!!!
-
+zope:
+  environment:
+    USERID: '1001'
+  domainname: eionet.europa.eu
+  labels:
+    io.rancher.scheduler.affinity:host_label: hostname=eionet-cph-10
+  hostname: planner
+  image: eeacms/planner
+  volumes:
+  - planner-data:/var/local/website/var
+  mem_limit: 3221225472
   ports:
-    - "50005:21582"
-  volumes_from:
-  - planner_home
+  - "8080"
