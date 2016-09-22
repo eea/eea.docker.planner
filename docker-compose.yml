@@ -4,7 +4,7 @@ zope:
   domainname: eionet.europa.eu
   labels:
     io.rancher.scheduler.affinity:host_label: hostname=eionet-cph-10
-  hostname: planner
+  hostname: eeacms/eionet.planner
   image: eeacms/planner
   volumes:
   - planner-data:/var/local/website/var
