@@ -1,11 +1,11 @@
 zope:
+  image: eeacms/eionet.planner
   environment:
     USERID: '1001'
   domainname: eionet.europa.eu
   labels:
     io.rancher.scheduler.affinity:host_label: hostname=eionet-cph-10
-  hostname: eeacms/eionet.planner
-  image: eeacms/planner
+  hostname: planner
   volumes:
   - planner-data:/var/local/website/var
   mem_limit: 3221225472
